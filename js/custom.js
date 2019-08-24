@@ -432,7 +432,7 @@ function render() {
   });
   document.querySelector("#guesswho_board").innerHTML = html;
   let myScore = parseInt($("#myscore").text());
-  let winAudio = new Audio("/sounds/applause.mp3");
+  let winAudio = new Audio("./sounds/applause.mp3");
   $("#guesswho_board .card").on("click", function() {
     debugger;
     // let cardClicked;
@@ -465,7 +465,7 @@ function computerGuessCard() {
     const randomCard = availableCards[randomCardIndex];
     const randaomCardName = randomCard.getAttribute("data-card-name");
     let computerScore = parseInt($("#computerscore").text());
-    let loseAudio = new Audio("/sounds/boohiss.mp3");
+    let loseAudio = new Audio("./sounds/boohiss.mp3");
     if (randaomCardName === game.cardToGuess.name) {
       $("#guesswho_card")
         .find(".front")
