@@ -1,0 +1,175 @@
+html {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  max-height: 100vh;
+}
+
+.logo img {
+  position: relative;
+  display: block;
+  margin: 30px 22px 0px auto;
+  width: 30%;
+  transform: rotate(10deg);
+  z-index: 1;
+  animation: spinner 1s ease-in-out 1;
+}
+
+#guesswho_board {
+  background: rgb(45, 50, 122);
+  width: 700px;
+  height: 640px;
+  padding: 30px;
+  margin: -185px auto auto 30px;
+  border-radius: 15px;
+  box-shadow: inset 0px 0px 5px 5px rgb(255, 230, 0);
+  float: left;
+}
+
+.card .front {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 35px;
+  height: 80px;
+  float: left;
+  margin: 20px;
+  padding: 20px;
+  font-size: 64px;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 2px 2px rgb(255, 230, 0);
+}
+/* 
+.card .back {
+  background-image: url(../img/back.jpg) !important;
+} */
+
+.card .front.blocked,
+.card .back.blocked {
+  pointer-events: none;
+}
+
+#myscore {
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 2px 2px rgb(255, 230, 0);
+  font-size: 30px;
+  width: 40%;
+  padding: 20px;
+  padding-top: 20px;
+}
+
+#computerscore {
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 2px 2px rgb(255, 230, 0);
+  font-size: 30px;
+  width: 40%;
+  padding: 20px;
+  padding-top: 20px;
+  margin: -76px 213px;
+}
+
+/* #winnerorloser {
+  background: white;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 2px 2px rgb(255, 230, 0);
+  font-size: 30px;
+  width: 80%;
+  padding: 20px;
+  padding-top: 20px;
+} */
+
+.container {
+  position: relative;
+}
+
+#guesswho_questions {
+  position: relative;
+  background: rgb(45, 50, 122);
+  width: 480px;
+  height: 640px;
+  padding: 30px;
+  margin: -185px 30px auto auto;
+  border-radius: 15px;
+  box-shadow: inset 0px 0px 5px 5px rgb(255, 230, 0);
+}
+
+#board {
+  margin: 0 auto 0 auto;
+  display: inline;
+}
+
+#guesswho_card {
+  display: block;
+  margin: 30px 15px 0px auto;
+  position: absolute;
+  left: 40px;
+  top: 0px;
+}
+
+#questions {
+  color: white;
+  margin: 180px 25px;
+}
+
+button {
+  background-color: rgb(45, 50, 122);
+  color: white;
+  font-weight: bolder;
+  margin: 0px 0px 5px 0px;
+  width: 49%;
+  padding: 16px;
+  border-radius: 15px;
+  box-shadow: inset 0px 0px 5px 5px rgb(255, 230, 0);
+  outline: none;
+}
+
+.back {
+  background-image: url("../img/back.jpg");
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-shadow: inset 0px 0px 5px 5px rgb(255, 230, 0);
+}
+
+.modal {
+  background: rgb(45, 50, 122);
+  width: 30%;
+  height: 30%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 0px 5px 5px rgb(255, 230, 0);
+  color: white;
+}
+
+.spinner {
+  background-image: url("../img/Guess-Who-Small.png");
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid;
+  border-color: transparent rgb(255, 230, 0);
+  animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

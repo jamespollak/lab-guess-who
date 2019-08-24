@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="../img/Guess-Who.png" alt="Guess Who" />
+    </div>
+    <div id="board">
+      <div id="guesswho_board"></div>
+      <div id="guesswho_questions">
+        <div id="guesswho_card"></div>
+        <div id="questions">
+          <button class="btn active" value="Brown" feature="haircolor">
+            BROWN HAIR
+          </button>
+          <button class="btn active" value="Yes Moustache" feature="moustache">
+            MOUSTACHE
+          </button>
+          <button class="btn active" value="Yes Glasses" feature="glasses">
+            GLASSES
+          </button>
+          <button class="btn active" value="Male" feature="gender">
+            MALE
+          </button>
+          <button class="btn active" value="Black" feature="haircolor">
+            BLACK HAIR
+          </button>
+          <button class="btn active" value="Brown" feature="eyecolor">
+            BROWN EYES
+          </button>
+          <button class="btn active" value="Grey" feature="haircolor">
+            GREY HAIR
+          </button>
+          <button class="btn active" value="Yes Hat" feature="hat">
+            HAT
+          </button>
+          <button class="btn active" value="Blue" feature="eyecolor">
+            BLUE EYES
+          </button>
+          <button class="btn active" value="Ginger" feature="haircolor">
+            GINGER HAIR
+          </button>
+          <button class="btn active" value="Female" feature="gender">
+            FEMALE
+          </button>
+          <button class="btn active" value="Yes Beard" feature="beard">
+            BEARD
+          </button>
+          <button class="btn active" value="Yes Bald" feature="bald">
+            BALD
+          </button>
+          <button class="btn active" value="Blond" feature="haircolor">
+            BLOND HAIR
+          </button>
+          <div id="scores">
+            <div id="myscore"><span class="myscore">0</span></div>
+            <div id="computerscore"><span class="computerscore">0</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay">
+      <div class="modal">
+        <h2>COMPUTER GUESSING</h2>
+        <div class="spinner"></div>
+      </div>
+    </div>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/custom.js"></script>
+  </body>
+</html>
