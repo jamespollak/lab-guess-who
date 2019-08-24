@@ -57,6 +57,7 @@ body {
   width: 40%;
   padding: 20px;
   padding-top: 20px;
+  font-weight: lighter;
 }
 
 .computerscore {
@@ -67,6 +68,7 @@ body {
   padding: 20px;
   padding-top: 20px;
   margin: -76px 213px;
+  font-weight: lighter;
 }
 
 /* #winnerorloser {
