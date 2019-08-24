@@ -324,7 +324,7 @@ class Game {
       '">';
     html += '  <div class="back" name="' + this.cardToGuess.img + '"></div>';
     html +=
-      '  <div class="front" style="background-image: url(../img/back.jpg' +
+      '  <div class="front" style="background-image: url(./img/back.jpg' +
       ')"></div>';
     html += "</div>";
 
@@ -363,7 +363,7 @@ $(document).ready(function() {
           this.setAttribute("available", false);
           $(this)
             .find(".front")
-            .css("background-image", "url(../img/back.jpg");
+            .css("background-image", "url(./img/back.jpg");
         }
       });
     } else {
@@ -372,7 +372,7 @@ $(document).ready(function() {
           this.setAttribute("available", false);
           $(this)
             .find(".front")
-            .css("background-image", "url(../img/back.jpg");
+            .css("background-image", "url(./img/back.jpg");
         }
       });
     }
@@ -425,7 +425,7 @@ function render() {
       '">';
     html += '<div class="back" name="' + pic.img + '"></div>';
     html +=
-      '<div class="front" style="background-image: url(../img/' +
+      '<div class="front" style="background-image: url(./img/' +
       pic.img +
       ')"></div>';
     html += "</div>";
@@ -440,7 +440,7 @@ function render() {
     if ($(this).data("card-name") === game.cardToGuess.name) {
       $("#guesswho_card")
         .find(".front")
-        .css("background-image", `url(../img/${game.cardToGuess.img})`);
+        .css("background-image", `url(./img/${game.cardToGuess.img})`);
       myScore++;
       $("#myscore").text(myScore);
       winAudio.play();
@@ -451,7 +451,7 @@ function render() {
       this.setAttribute("available", false);
       $(this)
         .find(".front")
-        .css("background-image", "url(../img/back.jpg");
+        .css("background-image", "url(./img/back.jpg");
       setTimeout(computerGuessCard, 1000);
     }
   });
@@ -469,7 +469,7 @@ function computerGuessCard() {
     if (randaomCardName === game.cardToGuess.name) {
       $("#guesswho_card")
         .find(".front")
-        .css("background-image", `url(../img/${game.cardToGuess.img})`);
+        .css("background-image", `url(./img/${game.cardToGuess.img})`);
       computerScore++;
       $("#computerscore").text(computerScore);
       loseAudio.play();
@@ -480,7 +480,7 @@ function computerGuessCard() {
       randomCard.setAttribute("available", false);
       $(randomCard)
         .find(".front")
-        .css("background-image", "url(../img/back.jpg");
+        .css("background-image", "url(./img/back.jpg");
     }
     $(".overlay").css("display", "none");
   }, 2000);
